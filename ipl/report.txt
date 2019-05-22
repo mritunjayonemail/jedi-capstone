@@ -1,0 +1,16 @@
+IPL Win predictor
+Python notebook is ipl_analysis.ipynb
+
+For exploratory data analysis refer python notebook.
+
+Win predictor model 1:
+	Feature used: current_score', 'target_score', 'target_remaining', 'wicket_remaining',  'balls_remaining'
+	Model:XG boost
+	Accuracy: 92%
+	
+Win predictor model 2:
+	Feature used: current_score', 'target_score', 'target_remaining', 'wicket_remaining',  'balls_remaining', 'venue_Name', 'Toss_Name'
+	Model:Random Forest classifier
+	Accuracy: 79%
+
+

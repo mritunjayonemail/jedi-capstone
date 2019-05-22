@@ -1,0 +1,62 @@
+Stock Price prediction
+Python notebook is stock_prediction.ipynb
+
+For exploratory data analysis refer python notebook.
+
+The prepared data is at folder 'prepared-data'
+
+The file name structure for prepared data is '<comp_code>-prepared.csv'. If news data is not used then file name is '<comp_code>-prepared_without_news.csv'
+
+Features used are:
+positivity
+subjectivity	
+buy	
+sell	
+basiceps	
+netincome	
+totalrevenue	
+totalgrossprofit	
+Volume	
+Adj Close
+
+Features used without news data is:
+basiceps	
+netincome	
+totalrevenue	
+totalgrossprofit	
+Volume	
+Adj Close
+
+Data is prepared for lag of 30 days.
+
+Models is saved for each company in folder 'models'.
+The model file name structure is <comp_code>.sav'
+The model without news file name structure is <comp_code>_without_news.sav
+
+I referred following doc to prepare time series data:
+https://machinelearningmastery.com/convert-time-series-supervised-learning-problem-python/
+
+
+
+The result is at 'result' folder.
+The result file contains three columns 'current_price', 'actual_price' and 'predicted_price'.
+The result file follow the structure: <comp_code>_stock_prediction.csv
+The result file without news data has file name structure: <comp_code>_stock_prediction_without_news.csv
+
+Result RMSE on test data:
+
+Comp name	RMSE
+BA		0.19795628825
+T		0.240310614938
+F		0.0628072276227
+AMZN		0.282920454264
+MSFT		0.320553099097
+GE		0.211823646067
+GOOG		0.164802055351
+PFE		0.12968456877
+AAPL		0.22603361594
+JNJ		0.137890495241
+
+
+
+
